@@ -1,0 +1,39 @@
+\section{Future Development}\label{future}
+
+\subsection{Injury Calculations}\label{futureinjury}
+
+
+\noindent As discovered in Section \ref{injuries}, it is possible to categorize thresholds for when different levels of injury occur. The stopping distance calculated in Figure \ref{fig:inj} is for purpose of show only, and is not true to any specific surface. Research into the stopping distances of a variety of surfaces will result in accurate calculation of the height that g forces where serious injury occur and thresholds can be suitably placed. Different thresholds for different surfaces will help parents decide whether or not positioning a trampoline on their garden surface is appropriate or not.
+
+\subsection{Adding more Dimensions}\label{dimensions}
+
+One method that could be used to improve the model in the future allowing movement in the horizontal direction. This would mean that the trajectory of a mass flying off of the trampoline could be calculated, using $x$ and $y$ coordinates. This two-dimensional model could be used to more effectively calculate the maximum height of a mass, as the $x$ axis movement would make a better prediction of when the mass falls off the trampoline. 
+\\
+\\
+This could then be expanded in to a three-dimensional model, which would serve to make a more realistic solution. The model can be tested to see if using a three-dimensional model will gives any more information about the maximum heights reached by the masses over a greater range of initial conditions.
+
+\subsection{Adding more Masses}
+Looking at the behaviour of several masses on the trampoline could also provide some interesting results about the transfer of energy between several masses and possibly give some new information on maximum heights reached. This would allow for safety recommendations for trampolining in groups to be created.
+
+\subsection{Jumping Force}\label{jumpforce}
+%why we arent using a jumping force
+In order to make the model more true to life, a jumping force could be added. This force would add to the acceleration of the mass when moving upwards allowing it to reach greater heights.
+\\
+\\
+The person jumping could be modelled using a mass-spring-damper system \cite{springbok} with only one degree-of-freedom in the vertical direction, thus being consistent with the current model. The spring constant could then be chosen to give the most realistic simulation values.  
+\noindent Including this force would benefit the model because it would make the results more true to the behaviour of a human bouncing on a trampoline and effectively calculates the real maximum someone jumping on a trampoline would reach, and therefore the injury calculations could be more accurate. 
+
+\subsection{Modelling the Mass as a Person}
+\noindent Expanding on the jumping force in Section \ref{jumpforce}, the mass could be changed to a more human model. A human body model could be modelled as a 23 degree-of-freedom system, with 54 muscle actuators \cite{tadfonline}. The different joints could be modelled in three ways; with a 3 degree-of-freedom ball joint, a 2 degree-of-freedom joint and 1 degree of freedom hinge joint. This could improve the model by allowing calculation of how the body responds to balancing itself and again adds a jumping force. The centre of mass of the body would also change, impacting the results.
+\\
+\\
+\noindent If used in combination with a model using movement in more dimensions, discussed above in Section \ref{dimensions}, this would help to rectify the motion of a person subject to reaction forces with horizontal components. This would demonstrate the person trying to control their bounces to avoid being bounced off the trampoline from small bounces like an inanimate object.%rephrase
+
+
+
+%http://www.tandfonline.com/doi/pdf/10.1080/10255849908907988
+% It's an article from a journal that models the human body as a 23 degree of freedom system
+%find some references
+
+
+

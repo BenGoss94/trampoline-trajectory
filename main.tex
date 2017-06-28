@@ -1,0 +1,88 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[sort, numbers]{natbib} %Use bibtex package
+\usepackage{url}
+\usepackage{}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\bibliographystyle{unsrtnat}
+
+\setcounter{secnumdepth}{4}
+
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+{\LARGE Trampoline Safety}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+\scshape % Small caps
+
+ DATE\par % Location and year
+ 
+\today
+
+\vspace*{2\baselineskip} % Whitespace between location/year and editors
+
+By \\[\baselineskip]
+{\Large Matt Collins \\ Ben Goss \\ Stewart De Havilland-Gray \\ Ben Willsher \par} % Editor list
+\vspace*{2\baselineskip} % Whitespace between location/year and editors
+{\itshape The University of Bristol\par} % Editor affiliation
+
+
+
+\endgroup}
+
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+\titleGP % This command includes the title page
+
+%\maketitle
+\clearpage
+\begin{abstract}
+\input{./Abstract.tex}
+\end{abstract}
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+
+\input{./Introduction.tex}
+
+\input{./Research.tex}
+
+\input{./Model.tex}
+
+\input{./Results.tex}
+
+\input{./Injury.tex}
+
+\input{./Conclusion.tex}
+
+\input{./Future_development.tex}
+
+\newpage
+
+\bibliography{References}
+
+\end{document}
